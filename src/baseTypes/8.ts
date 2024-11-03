@@ -3,6 +3,13 @@
   який може містити значення "male", "female". Створіть змінну myGender цього типу.
 */
 
-const myGender;
+// Оголошення типу Gender як union type
+type Gender = "male" | "female";
+
+// Створення змінної myGender типу Gender
+const myGender: Gender = "male"; // або "female"
+
+// Приклад використання
+console.log(myGender); // Виведе "male"
 
 export {};
